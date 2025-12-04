@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPSLS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="backg.jpg" style="background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+    <div class="container" background="tablebg.webp" style="background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+        <h1>Rock, Paper, Scissors, Lizard, Spock!</h1>
+        
+        <div class="game-area">
+            <div class="options">
+                <button class="choice-btn" data-choice="1">✊ Rock</button>
+                <button class="choice-btn" data-choice="2">🖐️ Paper</button>
+                <button class="choice-btn" data-choice="3">✌️ Scissors</button>
+                <button class="choice-btn" data-choice="4">🦎 Lizard</button>
+                <button class="choice-btn" data-choice="5">🖖 Spock</button>
+            </div>
+        </div>
+
+        <div class="result-area">
+            <p id="player-display">You chose: -</p>
+            <p id="cpu-display">CPU chose: -</p>
+            <h2 id="result-message">Select an option to start!</h2>
+            <p id="rule-applied"></p>
+        </div>
+
+        <button id="play-again-btn" style="display:none;">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
